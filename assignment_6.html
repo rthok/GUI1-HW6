@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- =============================================================== -->
+<!-- Author : Ravy Thok                                              -->
+<!-- Email : ravy_thok@student.uml.edu                               -->
+<!-- School : UMass Lowell                                           -->
+<!-- Course : COMP 4610 - GUI Programming I                          -->
+<!-- Assignment :  No. 6: Creating an Interactive Dynamic Table      -->
+<!--                                                                 -->
+<!-- Filename: assignment_6.html                                     -->
+<!-- Created : September 12, 2016 at 2:10 pm                         -->
+<!-- =============================================================== -->
+
+<html lang="en">
+<!-- head of file -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravy's First Web Page</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- My css file-->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<!-- the body of the file -->
+<body>
+    console.log("body created");
+    <div class="container">
+        <!-- Creating the header section of the web page -->
+        <header>
+            <h1>Assignment 6</h1>
+        </header>
+
+        <!-- Creates the navigation section of the web page-->
+        <nav>
+            <!-- Creating navigation buttons -->
+            <div class="btn-group btn-group-justified">
+                <!-- Link button -->
+                <a href="index.html" class="btn btn-default">Home</a>
+                <a href="assignment_6.html" class="btn btn-default">Current Assignment</a>
+                <a href="assignment_page.html" class="btn btn-default">Previous Assignments</a>
+            </div>
+        </nav>
+
+        <!-- Creating form for user input -->
+        <article>
+            <h2>Please enter (4) two digit numbers.</h2>
+            <!-- Created forms for user inputs-->
+            <form class="form-horizontal" onsubmit="return validateNUM();">
+                <h3>Horizontal Numbers:</h3>
+
+                <!-- Input form #1 -->
+                <div class="form-group">
+                    <label class="control-label col-sm-1">1. </label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="hNUM1" name="hNUM1">
+                        <p id="hMSG1"></p>
+                    </div>
+                </div>
+
+                <!-- Input form #2 -->
+                <div class="form-group">
+                    <label class="control-label col-sm-1">2. </label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="hNUM2" name="hNUM2"> 
+                        <p id="hMSG2"></p>
+                    </div>
+                </div>
+
+                <h3>Vertical Numbers:</h3>
+
+                <!-- Input form #3 -->
+                <div class="form-group">
+                    <label class="control-label col-sm-1">1. </label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="vNUM1" name="vNUM1">
+                        <p id="vMSG1"></p>
+                    </div>
+                    </div>
+
+                <!-- Input form #4 -->
+                <div class="form-group">
+                    <label class="control-label col-sm-1">2. </label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="vNUM2" name="vNUM2"> 
+                        <p id="vMSG2"></p>
+                    </div>
+                </div>
+
+                <!-- Create a submit button -->
+                <button onclick= "validateNUM()" class="btn btn-default">Submit</button>  
+                <p id = "tableMSG"></p>
+            </form>
+            <table id="mytable"></table>
+        </article>
+
+        <!-- Creating the footer section of the web page -->
+        <footer>
+          <p> Designed by Ravy Thok- GUI Programming I</p>
+          <p>Last updated Nov 3<sup>th</sup>, 2016</p>
+        </footer>
+
+        <!-- Link javascript file -->
+        <script src="myjavascript.js"></script>
+    </div>
+</body>
+</html>

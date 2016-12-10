@@ -1,0 +1,95 @@
+/*
+Author : Ravy Thok
+Email : ravy_thok@student.uml.edu
+School : UMass Lowell,
+Course : COMP 4610 - GUI Programming I
+Assignment :  No. 6: Creating an Interactive Dynamic Table      
+
+Filename: style.css
+Created on : Oct 4, 2016, 2:08:59 PM
+*/
+
+/* Re-defining h1 header */
+h1{
+  font-family: serif;
+  color: white ;
+  text-shadow: 2px 2px 4px black;
+}
+
+/* Styling for the body */
+body{
+/* image was found @ http://trunkweed.com/uploads/posts/images/802283-web-design-wallpaper-background.png */
+  background-image: url(backg.png);
+  background-size: cover;
+  margin: auto;
+  max-width: 850px;
+  min-width: 600px;
+}
+
+/* Styling for the container */
+div.container{
+width: 100% ;
+}
+
+/* Styling for the header */
+header{
+  text-align:center;
+  padding: 1em;
+}
+
+/* Styling for the footer */
+footer{
+  text-align:center;
+  padding: 1em;
+}
+
+/* Styling for the article */
+article {
+  text-align: left;
+  background-color:dimgrey;
+  border: 2px solid white ;
+  padding: 1em;
+  min-width: 600px;
+  min-height: 450px;
+  box-shadow: 10px 10px 5px black;
+}
+
+/* Styling for the image*/
+img{
+  box-shadow: 5px 5px 5px black;
+  margin-left: 15px;
+  float: right;
+}
+
+/* Styling for the unordered list */
+ul li{
+  font-family: sans-serif;
+  padding: 5px;
+}
+
+/* Styling for the navigation*/
+nav {
+  float: top;
+  text-align: left;
+  color: black;
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 5px black;
+}
+
+/* Styling for the navigation links */
+nav a:link{
+padding-right: 15px;
+font-family: sans-serif;
+text-decoration: none;
+}
+
+/* Styling for the visited links */
+nav a:visited {
+  font-weight: bold;
+}
+
+/* Styling for the links when it's being hovered'*/
+nav a:hover {
+	color: black;
+}
+
